@@ -1,0 +1,15 @@
+{
+	"services": {
+		"Logger": {
+			"class": "logging.Logger",
+			"init_parameters": ["MyLogger"]
+		},
+		"Storage": {
+			"class": "local_services.StorageService",
+			"init_parameters": ["local/storage", "@Logger"]
+		},
+		"Hook": {
+			"class": "local_services.HookService"
+		}
+	}
+}
